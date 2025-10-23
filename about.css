@@ -1,0 +1,65 @@
+/* Masonry Layout for Skills & Stats */
+.skills-grid,
+.stats-grid {
+  column-count: 3; /* number of columns */
+  column-gap: 20px; /* gap between columns */
+}
+
+.skill-card,
+.stat-card {
+  display: inline-block; /* necessary for column layout */
+  width: 100%; /* fill column width */
+  margin-bottom: 20px; /* space between cards vertically */
+  background: rgba(15, 20, 32, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.skill-card h4,
+.stat-card .stat-number {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.skill-card p,
+.stat-card .stat-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive Masonry */
+@media (max-width: 1024px) {
+  .skills-grid,
+  .stats-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid,
+  .stats-grid {
+    column-count: 1;
+  }
+}
+
+/* Keep image placeholder and text intact */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-image {
+  order: -1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-placeholder {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}

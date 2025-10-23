@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shakshi Blog - Article</title>
+  <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo"><h2>Shakshi Blog</h2></div>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <div class="content-wrapper">
+    <div class="article-layout">
+      <!-- Table of Contents - 20% width -->
+      <aside class="toc-sidebar">
+        <div class="toc">
+          <h3>Table of Contents</h3>
+          <ul id="toc-list" class="toc-list"></ul>
+        </div>
+        <!-- Additional content to fill space -->
+        <div class="sidebar-extras">
+          <div class="extra-card">
+            <h4>Did you know?</h4>
+            <p>Shakshi is currently pursuing B.Tech in Computer Science and has a passion for dance and creative arts!</p>
+          </div>
+          <div class="extra-card">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">← Back to Home</a></li>
+              <li><a href="#article-content">Skip to Content</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Article Content - 80% width -->
+      <section class="article-page">
+        <h1 id="article-title">Loading...</h1>
+        <div id="article-meta" class="article-meta">Reading...</div>
+        <div id="article-content" class="article-content"></div>
+        <button onclick="window.history.back()" class="back-btn">← Back</button>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="articles.js"></script>
+</body>
+</html>

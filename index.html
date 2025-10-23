@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shakshi Blog - Insights & Stories</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><h2>Shakshi Blog</h2></div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Shakshi <span class="highlight">Blog</span></h1>
+      <p>Personal insights, travel stories, and life experiences shared with passion</p>
+      <div class="search-container">
+        <input type="text" placeholder="Search articles..." class="search-input"/>
+        <button type="button" class="search-button">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-wrapper">
+      <aside class="sidebar">
+        <!-- Categories -->
+        <div class="categories-section">
+          <h3>Categories</h3>
+          <ul class="category-list">
+            <li><a href="#" class="category-link active" data-category="All Posts">All Posts</a></li>
+            <li><a href="#" class="category-link" data-category="Web Dev Journey">Web Dev Journey</a></li>
+            <li><a href="#" class="category-link" data-category="Daily Challenges">Daily Challenges</a></li>
+            <li><a href="#" class="category-link" data-category="Research & Learnings">Research & Learnings</a></li>
+            <li><a href="#" class="category-link" data-category="DSA & Java">DSA & Java</a></li>
+            <li><a href="#" class="category-link" data-category="Academics">Academics</a></li>
+            <li><a href="#" class="category-link" data-category="Personal Life">Personal Life</a></li>
+          </ul>
+        </div>
+
+        <!-- Tags -->
+        <div class="tags-section">
+          <h3>Popular Tags</h3>
+          <div class="tags-container">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">DSA</span>
+            <span class="tag">Java</span>
+            <span class="tag">WebDev</span>
+            <span class="tag">Learning</span>
+            <span class="tag">Coding</span>
+            <span class="tag">Productivity</span>
+            <span class="tag">Motivation</span>
+            <span class="tag">Personal</span>
+            <span class="tag">Journey</span>
+          </div>
+        </div>
+      </aside>
+
+      <section class="articles-section">
+        <div class="featured-articles">
+          <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15l4-4-4-4m0 8l-4-4 4-4"/></svg>
+            Featured Articles
+          </h2>
+          <div class="featured-grid" id="featured-grid">
+            <!-- Featured articles will be loaded dynamically -->
+          </div>
+        </div>
+
+        <div class="all-articles">
+          <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg>
+            All Articles
+          </h2>
+          <div class="articles-grid" id="articles-grid">
+            <!-- All articles will be loaded dynamically -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="about-me">
+    <h2>About Shakshi</h2>
+    <p>Hey! I'm Shakshi — a passionate learner and creator sharing my journey through web development, 
+       academics, and personal growth. From exploring design ideas to learning coding and documenting 
+       every milestone, this space reflects my evolving story.</p>
+    <a href="about.html" class="about-btn">Read More About Me →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Shakshi Blog</h3>
+        <p>Sharing life's beautiful moments through words and experiences.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
